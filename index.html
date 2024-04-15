@@ -1,2 +1,94 @@
-<h1>Hello!</h1>
-<p>This is my first paragraph.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <title>Test!</title>
+    <style>
+        body {
+            font-family: Helvetica;
+            color:rgb(17, 0, 255);
+            background-color: yellow;
+        }
+        #hello {
+            font-family: Helvetica;
+            font-weight: bolder;
+            letter-spacing: -5px;
+            font-size: 100px;
+            color:rgb(17, 0, 255);
+            background-color: yellow;
+        }
+        #links {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        .quote {
+            font-size: 50px;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        section.paragraph {
+            font-size: 50px;
+            letter-spacing: -4px;
+        }
+        section.paragraph > .first {    
+            font-style: italic;
+            
+        }
+        .paragraph span{
+            font-style: italic;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+            background-color: rgb(0, 132, 255);
+            border: 1px rgb(15, 252, 26);
+            display: block;
+            width: 500px;
+            text-align: left;
+        }
+        a:hover, a:active {
+            background-color: cornsilk;
+            border: 2px black;
+
+        }
+
+        #links li:hover, #links li:active {
+            font-size: larger;
+            width: 500px;
+            color: darkolivegreen;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 id="hello">Hello!</h1>
+        <section class="paragraph">
+            <h2 class="first">This is my first paragraph.</h2>
+            <p2 class="second">This is my second paragraph.</p2> 
+            <span>My first span!</span> 
+        </section>
+    
+        <section id="links">
+        <ol>
+            <li><a href="index2.html" title="Page two">
+            Here is a link to page two! 
+            </li></a>
+            <li><a href="https://youtube.com" target="_blank" title="YouTube">
+            <div>Here is a link to YouTube! </div> 
+            </li></a>
+        </ol>
+        </section>
+
+        <section>
+            <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" width="1024" height="760" alt="Le BonBon"> 
+            <h1 class="quote"> &quot;I just sharted on my neighbor's lawn today.&quot; </h1>
+        </section>
+        <section>
+            <a href="#links">
+                Go to links?
+            </a>
+        </section>
+</body>
+</html>
